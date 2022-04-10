@@ -41,8 +41,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
-    OnePlusCameraOverlay \
-    OnePlusGalleryOverlay \
     OPSoundTunerOverlay
 
 # VNDK
@@ -470,7 +468,8 @@ PRODUCT_COPY_FILES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.oneplus
+    vendor.lineage.touch@1.0-service.oneplus \
+    TouchGestures
 
 # tri-state-key
 PRODUCT_PACKAGES += \
